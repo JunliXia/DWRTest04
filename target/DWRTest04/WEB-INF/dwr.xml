@@ -1,0 +1,9 @@
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr//dwr30.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="Add" scope="request">
+			<param name="class" value="com.dwr.DWRTest04.Add" />
+		</create>                      
+		
+	</allow>
+</dwr>
