@@ -25,7 +25,7 @@
     </servlet-mapping>
   
   <welcome-file-list>
-    <welcome-file>/page/indexdwr.jsp</welcome-file>
+    <welcome-file>/page/index.jsp</welcome-file>
   </welcome-file-list>
   
 </web-app>

@@ -14,21 +14,20 @@
 <script>
 var a = 0
 var b = 0
-function doAdd() {
+function doMath() {
 	a = document.getElementById("a").value;
 	b = document.getElementById("b").value;
-	Add.add(a,b,doAddCallBack);
+	Add.add(a,b,doMathCallBack);
 }
-var doAddCallBack = function(answer) {
-	document.getElementById("resultDiv").innerHTML ="result = " + answer
+var doMathCallBack = function(answer) {
+	document.getElementById("resultDiv").innerHTML = answer
 }
 
 </script>
-    <input type="text" id="a">
-    +
-    <input type="text" id="b">
-    <input type="button" onClick="doAdd()" value="=">
-<span id = "resultDiv"></span>
+    <span id = "resultDiv"></span>
+		<input type="text" id="a"> &nbsp <input type="text"
+			id="b"> &nbsp <input type="button" onClick="doMath()" value="=">
+
 
 </body>
 </html>
