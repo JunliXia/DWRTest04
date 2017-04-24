@@ -3,7 +3,12 @@
 	
 	
 	<allow>
+		<!-- bean转换器，将实例转换为JavaScript类型 。注意，如果不是显示给出授权许可，那么客户端不能远程访问它。-->
+		<!-- 也可以使用通配符*，将某包下的所有bean进行转换-->
 	    <convert  converter="bean" match="com.dwr.DWRTest04.ResultBean"/>
+	    
+	    <!-- new创建器：访问远程任何类型的bean -->
+	    <!-- 还有其他创建器，例如spring,jsf,struts等-->
 		<create creator="new" javascript="Add" scope="request">
 			<param name="class" value="com.dwr.DWRTest04.Add" />
 		</create>                      

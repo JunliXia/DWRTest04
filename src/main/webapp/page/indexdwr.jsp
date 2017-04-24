@@ -45,14 +45,13 @@
     function doAddWithBean() {
         a2 = document.getElementById("a2").value;
         b2 = document.getElementById("b2").value;
-        //asd
         Add.addWithBean(a2,b2,doAddCallBackWithBean);
     }
-    //asdasd
     var doAddCallBackWithBean = function(answer) {
         document.getElementById("resultDivWithBean").innerHTML ="result2 = " + answer.result
     }
 
+//**********************批量执行的例子*******************************  
 </script>
     <br>
     <br>
@@ -61,6 +60,28 @@
     <input type="text" id="b2">
     <input type="button" onClick="doAddWithBean()" value="=">
     <span id="resultDivWithBean"></span>
+
+<script>
+    var a3 = 0
+    var b3 = 0
+    function doAddWithBatch() {
+        a3 = document.getElementById("a3").value;
+        b3 = document.getElementById("b3").value;
+        dwr.engine.beginBatch();
+        Add.add(a3,b3,doAddCallBack);
+        Add.addWithBean(a3,b3,doAddCallBackWithBean);
+        dwr.engine.endBatch();
+    }
+
+</script>
+    <br>
+    <br>
+    <input type="text" id="a3">
+     +
+    <input type="text" id="b3">
+    <input type="button" onClick="doAddWithBatch()" value="=">
+
+
 
 </body>
 </html>
