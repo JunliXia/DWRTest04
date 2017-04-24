@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- engine.js是真正的DWR客户端代码，包含在dwr.jar中  -->
 <script type="text/javascript" src="<%= request.getContextPath()%>/dwr/engine.js"></script>
 <script type="text/javascript" src="<%= request.getContextPath()%>/dwr/interface/Add.js"></script>
 
@@ -25,7 +26,7 @@
 		document.getElementById("resultDiv").innerHTML ="result = " + answer
 }
 	
-	
+	   
 	
 	
 //**********************返回值为JavaBean的例子*******************************	
